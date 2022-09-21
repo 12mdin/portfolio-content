@@ -14,3 +14,13 @@ h1 {
 nav {
     margin-bottom: 10px;
 }
+
+img {
+    margin: 1em;
+    border: 2px dashed orange;
+    width: 60%
+}
+
+img:hover {
+    box-shadow: 10px 10px 5px lightblue;
+}
