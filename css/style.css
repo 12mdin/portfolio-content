@@ -1,15 +1,16 @@
 body {
-  background-color: black;
-  font-family: 'Raleway', sans-serif;
+  background-color: green;
+  box-sizing: border-box;
 }
 
-.navigation ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    padding: 0.5em;
 }
 
-.navigation li {
-  font-weight: 100;
-  letter-spacing: 2px;
+nav {
+    margin-bottom: 10px;
 }
