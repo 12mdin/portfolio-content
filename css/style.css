@@ -44,7 +44,7 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 800px 80px;
+    grid-template-rows: 80px auto auto 80px;
     gap: 1em;
 }
 .grid > * {
