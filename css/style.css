@@ -1,0 +1,233 @@
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  box-sizing: border-box;
+  font-family: "Trirong", Verdana;
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+    padding: 0.5em;
+}
+
+/* nav bar */
+.nav-bar{
+    /* margin-top: 20px; */
+    /* grid-row: 1;
+    grid-column: 1; */
+    /* position: fixed; */
+    width: 100%;
+    overflow: hidden;
+}
+.nav-bar a.current {
+    background-color: antiquewhite;
+}
+.list li{
+    list-style-type: none;
+    float:left;
+}
+.list a{
+    text-decoration: none;
+    padding:10px 35px;
+    color:black;
+    font-size: 20px; 
+    letter-spacing: 1px;  
+}
+.list a:hover{
+    background-color: gray;
+}
+
+/* index grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 800px 80px;
+    gap: 1em;
+}
+.grid > * {
+    /* background: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-header {
+    grid-row: 1 / span 1;
+}
+
+.index-main {
+    min-width: 15em;
+    background-image: url("../images/head2.jpg");
+    background-repeat: no-repeat;
+    opacity: 80%;
+    animation: fadeIn 3s;
+    grid-row: 2 / span 1;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:0.8;}
+  }
+.content {
+    text-align: left;
+    margin: 100px;
+}
+aside {
+    padding: 1em;
+    background-color: lightblue;
+    grid-row: 3 / span 1;
+
+}
+
+.footer-container {
+    grid-row: 4 / span 1;
+
+}
+
+/* gallery grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto 100px;
+    gap: 1em;
+}
+
+.gallery-grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.gallery-content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gallery-footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/* gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.gallery img {
+    margin: 1em;
+    border: 4px dashed orange;
+    width: 30%;
+    padding: 10px;
+    opacity: 80%;
+}
+.gallery img:hover {
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+
+
+/* villagers */
+.character-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 400px 400px 80px;
+    gap: 1em;
+}
+.character-grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.character_content {
+    display: block;
+    /* align-items: center; */
+    text-align: center;
+}
+
+/* items */
+.item-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 400px 400px 80px;
+    gap: 1em;
+}
+.item-grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive layout */
+@media (min-width: 700px) {
+    .gallery {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 80px 800px 80px;
+        gap: 1em;
+    }
+    .grid > * {
+        /* background: lightblue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .index-header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .index-main {
+        min-width: 15em;
+        background-image: url("../images/head2.jpg");
+        background-repeat: no-repeat;
+        opacity: 80%;
+        animation: fadeIn 3s;
+        grid-column-start: 2;
+    }
+    aside {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        background-color: lightblue;
+    }
+
+    .footer-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+  }
+  
+  @media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    .index-main {
+      animation: none;
+    }
+  }
+
+
+
