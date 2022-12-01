@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8P80891XN8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8P80891XN8');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Villagers</title>
+</head>
+
+<body class='villagers-grid'>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+  <header id='header'>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="items.html">Items</a></li>
+        <li><a class="current" href="villagers.html">Villagers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="villagers" id="main">
+    <h1 class="villagers_heading">Some Villagers</h1>
+
+    <img src="images/Marshal.jpg" alt="marshal" />
+    <div>
+      <h2>Marshal</h2>
+      <p>
+        Marshal is a smug squirrel villager in the Animal Crossing series. He first appeared in Animal Crossing: New Leaf and has appeared in all subsequent games. He is the only smug squirrel in the series. His name may be derived from "marshmallow," referring to his fur color. His catchphrase, "sulky," may bear some resemblance to his appearance.
+        In New Horizons, Marshal has the music hobby and may sing anywhere without the need of a stereo.
+      </p>
+    </div>
+
+    <img src="images/Fang.jpg" alt="fang" />
+    <div>
+      <h2>Fang</h2>
+      <p>
+        Fang is a cranky wolf villager in the Animal Crossing series who appears in all games to date except Animal Crossing: Wild World. His name may come from the fang, a tooth found in carnivores. His Japanese name comes from Siberia, a region in northern Asia that is mostly an arctic environment.
+        In New Horizons, Fang has the education hobby and can be seen wearing rimmed glasses, reading a novel while outside, and using a magnifying glass when near certain objects.
+      </p>
+    </div>
+
+    <img src="images/Fauna.jpg" alt="fauna" />
+    <div>
+      <h2>Fauna</h2>
+      <p>
+        Fauna is a normal deer villager in the Animal Crossing series. She first appeared in Animal Crossing: New Leaf, and she was one of the first villagers announced for the release of the game. She has appeared in all subsequent games. Her name comes from fauna, meaning the animal life of a specific region, though it may also be a pun on fawn, a young deer.
+        In New Horizons, Fauna has the nature hobby and may be found reading a book pertaining to an item she is studying, which can be either flowers, bugs, fish, or fossils.
+      </p>
+    </div>
+
+    <img src="images/Blanche.jpg" alt="blanche" />
+    <div>
+      <h2>Blanche</h2>
+      <p>
+        Blanche is a snooty ostrich villager in the Animal Crossing series. She first appeared in Animal Crossing: New Leaf and has appeared in all subsequent games. Her name is the French word for white, referring to her feather color.
+        In New Horizons, Blanche has the nature hobby and may be found reading a book pertaining to an item she is studying, which can be either flowers, bugs, fish, or fossils.
+      </p>
+    </div>
+
+    <div class="myvideo">
+      <h1 class="villagers_heading">A clip of New Year Celebration</h1>
+      <div class="options">
+        <button id="play">Play Video</button>
+        <button id="pause">Pause Video</button>
+        <button id="skip">Skip Ahead</button>
+      </div>
+
+      <figure>
+        <video class="video"
+          autoplay="false"
+          width="800"
+          height="600"
+          id="videoplayer"
+          preload="none"
+          src="images/newyear.mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <figcaption>[New Year Celebration]</figcaption>
+      </figure>
+      <button id="mute">Mute</button><br>
+        <label for="slider">Volume</label>: 0
+        <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+        <div>Volume is: <span id="volume"></span><br><br></div>
+    </div>
+
+  </main>
+  <script src="js/video.js"></script>
+  <footer>&copy; 2022 Mu Ding</footer>
+</body>
+</html>
+
